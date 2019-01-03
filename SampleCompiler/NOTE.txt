@@ -1,0 +1,43 @@
+Files:
+
+expr.cup: 
+file di specifica sintattica del compilatore
+
+expr.lex: 
+file di specifica lessicale del compilatore
+
+SeqIstruzioni.java, Istruzione.java, Scrittura.java, Ripetizione.java, Expr.java: 
+classi per definire gli alberi sintattici
+
+Descrittore.java, SymbolTable.java: 
+descrittori degli identificatori e symbol table
+
+ExprConTab.java: 
+classe per definire la struttura che rappresenta l'espressione (albero e symbol table)
+
+Compilatore.java:
+Contiene applicazione (metodo main)
+
+test1, test2, test3, test4, test5, test6, test7, test8:
+files contenenti esempi di codice sorgente
+
+test1_cod, test2_cod, test3_cod, test4_cod, test5_cod, test6_cod, test7_cod, test8_cod:
+files contenenti esempi di codice macchina
+
+Token.java, TestToken.java, expr_test.lex:
+files utilizzati per testare l'analizzatore lessicale ed elencare i token riconosciuti
+
+Utilizzo compilatore:
+- assicurarsi che il package lt.macchina sia presente nella directory principale
+- java -jar java-cup-11b.jar expr.cup
+- jflex expr.lex
+- javac *.java
+- java Compilatore nome_file
+
+Utilizzo classe per test analizzatore lessicale:
+- Decommentare classe TokenTest
+- jflex expr_test.lex
+- javac Token.java
+- javac TokenTest.java
+- javac Scanner.java
+- java TokenTest nome_file

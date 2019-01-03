@@ -1,0 +1,8 @@
+//assegnamento
+b = a = input "inserire numero: "
+a = a + (a = a * a)
+output "A: " a
+newLine
+b = (b = b * b) + b
+output "B: " b
+newLine

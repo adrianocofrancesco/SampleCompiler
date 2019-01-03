@@ -1,0 +1,12 @@
+//continuazione
+x = input "x"
+y = input "y"
+resto = & //segue divisione intera
+x % y
+output "resto: " resto
+newLine
+x = &
+&
+y + 3
+output "x: " x
+newLine

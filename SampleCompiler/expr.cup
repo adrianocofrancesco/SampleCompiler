@@ -1,0 +1,152 @@
+/*
+File di specifica sintattica JavaCup
+Data un'espressione del linguaggio ne costruisce il parse tree
+*/
+
+import java_cup.runtime.*;
+
+/*
+Nome da attribuire al Parser (classe generata), la classe per i token avra' lo stesso nome seguito da Sym (ParserSym)
+*/
+class Parser;
+
+
+action code {:
+  SymbolTable symbolTable = new SymbolTable(); // inizializzazione Symbol Table
+:}
+
+parser code {:
+	/* Ridefinizione del metodo che visualizza i messaggi di errore */
+	public void unrecovered_syntax_error (Symbol cur_token) throws java.lang.Exception {
+
+		Scanner sc = (Scanner) getScanner(); //riferimento all’analizzatore lessicale in uso
+
+		//numero della riga in esame e testo corrispondente al token corrente
+		report_fatal_error("Errore di sintassi alla riga " + sc.currentLineNumber() + " leggendo " + sc.yytext(), null);
+	}
+:}
+
+
+/* Simboli terminali (token restituiti dallo scanner). */
+terminal           PIU, MENO, PER, DIVISO, MODULO;
+terminal           UNARIO, TONDA_APERTA, TONDA_CHIUSA, ASSEGNA;
+terminal String    IDENT, STRING, INPUT, OUTPUT, NEWLINE;
+terminal String    NUMERO;
+terminal           CR;
+terminal           LOOP, ENDLOOP, IFTHEN, IFELSE;
+
+
+/* Non terminali */
+non terminal Expr expr;
+non terminal Scrittura write;
+non terminal AssegnaExpr assign;
+non terminal Ripetizione rip;
+non terminal Istruzione istr;
+non terminal SeqIstruzioni seq;
+non terminal Programma prog;
+non terminal ExprConTab expr1;
+
+/* Precedenze e associativita' */
+precedence right ASSEGNA;
+precedence left PIU, MENO;
+precedence left PER, DIVISO, MODULO, IFTHEN, IFELSE;
+precedence nonassoc UNARIO;
+
+/* Simbolo iniziale */
+start with expr1;
+
+/* Produzioni */
+expr1     ::= prog:p
+          {: RESULT = new ExprConTab(p, symbolTable); :}
+	      ;
+
+prog      ::= seq:sq
+          {: RESULT = sq; :}
+          ;
+
+seq       ::= istr:i CR
+          {: RESULT = new SeqIstruzioniBase(i); :}
+          |
+          seq:sq istr:i CR
+          {: RESULT = new SeqIstruzioniComposte(sq, i); :}
+          ;
+
+istr      ::= assign:e
+          {: RESULT = new IstruzioneExpr(e); :}
+          |
+          write:w
+          {: RESULT = new IstruzioneScrittura(w); :}
+          |
+          rip:r
+          {: RESULT = new IstruzioneRipetizione(r); :}
+          ;
+
+rip       ::= LOOP expr:e CR seq:sq ENDLOOP
+          {: RESULT = new RipetizioneIstr(e, sq); :}
+          ;
+
+assign    ::= IDENT:id ASSEGNA expr:e1
+          {: Descrittore d = symbolTable.trovaEAggiungi(id);
+             RESULT = new AssegnaExpr(d, e1);
+          :}
+          ;
+
+write     ::= OUTPUT STRING:s
+          {: RESULT = new ScritturaStringa(s); :}
+          |
+          OUTPUT expr:e1
+          {: RESULT = new ScritturaExpr(e1); :}
+          |
+          OUTPUT STRING:s expr:e1
+          {: RESULT = new ScritturaStringaExpr(s, e1); :}
+          |
+          NEWLINE
+          {: RESULT = new ScritturaStringa("newLine"); :}
+          ;
+
+expr      ::= expr:e1 PIU expr:e2    
+	      {: RESULT = new PiuExpr(e1, e2); :} 
+	      | 
+          expr:e1 MENO expr:e2
+          {: RESULT = new MenoExpr(e1, e2); :}
+	      | 
+          expr:e1 PER expr:e2
+	      {: RESULT = new PerExpr(e1, e2); :} 
+	      | 
+          expr:e1 DIVISO expr:e2
+	      {: RESULT = new DivisoExpr(e1, e2); :} 
+	      | 
+	      expr:e1 MODULO expr:e2
+	      {: RESULT = new ModuloExpr(e1, e2, symbolTable); :}
+	      |
+	      expr:e1 IFTHEN expr:e2 IFELSE expr:e3
+          {: RESULT = new IfCondExpr(e1, e2, e3); :}
+          |
+          IDENT:id ASSEGNA expr:e1
+          {: Descrittore d = symbolTable.trovaEAggiungi(id);
+             RESULT = new AssegnaExpr(d, e1); :}
+          |
+          NUMERO:n
+	      {: RESULT = new NumExpr(n); :} 
+	      |
+          IDENT:id
+          {: Descrittore d = symbolTable.trovaEAggiungi(id);
+             RESULT = new IdExpr(d); :}
+          |
+          INPUT
+          {: RESULT = new InputExpr("input"); :}
+          |
+          INPUT STRING:s
+          {: RESULT = new InputExpr(s); :}
+          |
+          MENO expr:e
+	      {: RESULT = new UnMenoExpr(e); :} 
+	      %prec UNARIO
+	      |
+          PIU expr:e
+	      {: RESULT = new UnPiuExpr(e); :} 
+	      %prec UNARIO
+	      |
+          TONDA_APERTA expr:e TONDA_CHIUSA
+	      {: RESULT = e; :}
+	      ;

@@ -1,0 +1,6 @@
+//modulo
+a = input "a" % 5
+b = input "b" % 7
+y = b % a % b
+output "y:" y
+newLine

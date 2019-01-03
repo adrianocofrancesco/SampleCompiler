@@ -1,0 +1,7 @@
+//ternario
+c = input "valore condizione" ? input "prima condizione vera, inserire valore seconda condizione" : &
+input "prima condizione falsa, inserire valore seconda condizione" ? &
+input "seconda condizione vera, inserire valore variabile" &
+: input "seconda condizione falsa, inserire valore variabile"
+output "Valore variabile: " c
+newLine

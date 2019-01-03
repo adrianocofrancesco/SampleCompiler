@@ -1,0 +1,173 @@
+     PUSH=  0
+     POP    0
+     PUSH   0
+     PUSH=  0
+     POP    1
+     PUSH   1
+     PUSH=  0
+     POP    2
+     PUSH   2
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  99
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  108
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  109
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  109
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  117
+     OUTPUTCH
+     PUSH=  109
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  100
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  99
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  100
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  63
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     INPUT
+     POP    0
+     PUSH   0
+     PUSH=  1
+     POP    1
+     PUSH   1
+     PUSH   0
+     PUSH   1
+     SUB
+     PUSH=  1
+     ADD
+     JZERO  269
+     PUSH=  1
+     POP    2
+     PUSH   2
+     PUSH   0
+     PUSH   2
+     SUB
+     PUSH=  1
+     ADD
+     JZERO  258
+     PUSH   1
+     OUTPUT
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  42
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH   2
+     OUTPUT
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  61
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH   1
+     PUSH   2
+     MUL
+     OUTPUT
+     PUSH=  10
+     OUTPUTCH
+     PUSH   2
+     PUSH=  1
+     ADD
+     POP    2
+     PUSH   2
+     JUMP   186
+     PUSH   1
+     PUSH=  1
+     ADD
+     POP    1
+     PUSH   1
+     JUMP   170
+     PUSH=  10
+     OUTPUTCH
+     HALT

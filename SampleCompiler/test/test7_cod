@@ -1,0 +1,569 @@
+     PUSH=  0
+     POP    0
+     PUSH   0
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  118
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  108
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  99
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  100
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  122
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  63
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     INPUT
+     JZERO  258
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  112
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  109
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  99
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  100
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  122
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  118
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  44
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  118
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  108
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  99
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  100
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  99
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  100
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  122
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  63
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     INPUT
+     JUMP   445
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  112
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  109
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  99
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  100
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  122
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  102
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  108
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  44
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  118
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  108
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  99
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  100
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  99
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  100
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  122
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  63
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     INPUT
+     JZERO  612
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  99
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  100
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  99
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  100
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  122
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  118
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  44
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  118
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  108
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  118
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  98
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  108
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  63
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     INPUT
+     JUMP   778
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  99
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  100
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  99
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  100
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  122
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  102
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  108
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  44
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  110
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  118
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  108
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  118
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  98
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  108
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  63
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     INPUT
+     POP    0
+     PUSH   0
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  86
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  108
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  118
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  97
+     OUTPUTCH
+     PUSH=  98
+     OUTPUTCH
+     PUSH=  105
+     OUTPUTCH
+     PUSH=  108
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  58
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH   0
+     OUTPUT
+     PUSH=  10
+     OUTPUTCH
+     PUSH=  10
+     OUTPUTCH
+     HALT

@@ -1,0 +1,102 @@
+     PUSH=  0
+     POP    0
+     PUSH   0
+     PUSH=  0
+     POP    1
+     PUSH   1
+     PUSH=  0
+     POP    2
+     PUSH   2
+     PUSH=  0
+     POP    3
+     PUSH   3
+     PUSH=  0
+     POP    4
+     PUSH   4
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  120
+     OUTPUTCH
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  63
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     INPUT
+     POP    0
+     PUSH   0
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  121
+     OUTPUTCH
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  63
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     INPUT
+     POP    1
+     PUSH   1
+     PUSH   0
+     POP    2
+     PUSH   2
+     PUSH   2
+     PUSH   1
+     POP    3
+     PUSH   3
+     DIV
+     PUSH   3
+     MUL
+     SUB
+     POP    4
+     PUSH   4
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  114
+     OUTPUTCH
+     PUSH=  101
+     OUTPUTCH
+     PUSH=  115
+     OUTPUTCH
+     PUSH=  116
+     OUTPUTCH
+     PUSH=  111
+     OUTPUTCH
+     PUSH=  58
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH   4
+     OUTPUT
+     PUSH=  10
+     OUTPUTCH
+     PUSH   1
+     PUSH=  3
+     ADD
+     POP    0
+     PUSH   0
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  120
+     OUTPUTCH
+     PUSH=  58
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH=  34
+     OUTPUTCH
+     PUSH=  32
+     OUTPUTCH
+     PUSH   0
+     OUTPUT
+     PUSH=  10
+     OUTPUTCH
+     PUSH=  10
+     OUTPUTCH
+     HALT
